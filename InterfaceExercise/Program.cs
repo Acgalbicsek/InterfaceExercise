@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
 
 namespace InterfaceExercise
 {
@@ -6,6 +8,17 @@ namespace InterfaceExercise
     {
         static void Main(string[] args)
         {
+
+            SUV.DisplayDetails();
+            Car.DisplayDetails();
+            Truck.DisplayDetails();
+
+            
+
+            
+                
+               
+            
             //TODO Be sure to follow BEST PRACTICES when creating classes and interfaces
 
             //Create 2 Interfaces called IVehicle & ICompany
