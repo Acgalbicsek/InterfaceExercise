@@ -8,5 +8,12 @@ namespace InterfaceExercise
 {
     internal interface IVehicle
     {
+
+        public bool HasTrunk { get; set; }
+        public int NumberOfWheels { get; set; }
+        public bool HasAutoStart { get; set; }
+        public int NumberOfDoors { get; set; }
+
+        public void DisplayDetails();
     }
 }

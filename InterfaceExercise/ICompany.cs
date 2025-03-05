@@ -8,5 +8,8 @@ namespace InterfaceExercise
 {
     internal interface ICompany
     {
+
+        public string Logo { get; set; }    
+        public bool FreeTestDrive { get; set; }
     }
 }

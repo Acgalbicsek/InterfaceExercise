@@ -8,10 +8,66 @@ namespace InterfaceExercise
     {
         static void Main(string[] args)
         {
+            SUV suv = new SUV()
+            {
+                MPG = 31,
+                HasThirdRow = true,
+                HasTrunk = true,
+                NumberOfWheels = 4,
+                HasAutoStart = true,
+                NumberOfDoors = 4,
+                Logo = "KIA",
+                FreeTestDrive = true,
+            };
+            suv.DisplayDetails();
 
-            SUV.DisplayDetails();
-            Car.DisplayDetails();
-            Truck.DisplayDetails();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+            Car car = new Car()
+            {
+                HasTrunk = true,
+                NumberOfWheels = 4,
+                HasAutoStart = true,
+                NumberOfDoors = 4,
+                Logo = "Honda",
+                FreeTestDrive = true,
+                HasAWD = true,
+                HasHeatedSeats = true
+            };
+            car.DisplayDetails();
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+
+            Truck truck = new Truck()
+            {
+                Has4WD = true,
+                HasExtendedCab = true,
+                HasTrunk = false,
+                HasAutoStart = false,
+                NumberOfWheels = 4,
+                NumberOfDoors = 4,
+                FreeTestDrive = true,
+                Logo = "Chevy"
+            };
+            truck.DisplayDetails();
+            
+               
+        
+            
+
+               
+        
+        }
+            
+
+           
 
             
 
@@ -57,6 +113,6 @@ namespace InterfaceExercise
             //In the scope of them method, use string interpolation to display property values.
             //In order to also interpolate values from ICompany, research how to extend interfaces.
             
-        }
+        
     }
 }
